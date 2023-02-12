@@ -1,0 +1,7 @@
+Explanation:
+
+This code is so much shorter than the original code. It generates a deterministic partition key absed on the input event, and it  handles
+various scenarious such as when the even tdoes not have a partition key or when the partition key is not a string.
+It uses better variable names, uses a different way to determine whether candidate will be stringified or not according to its type.
+It eliminates the unnecessary code for returning the trivial partition key by defining the cadidate as the default in the beginning.
+It also writes the creating hash part in different lines to make it more readable. Furthermore, it eliminates all the else clauses in the code.
